@@ -27,6 +27,30 @@
 
 ## 🚀 Installation
 
+### 📦 Download Pre-built Binaries (Recommended)
+
+**Latest Release: v0.1.0**
+
+Download the latest pre-built binary for your platform:
+
+| Platform | Architecture | Download Link |
+|----------|-------------|---------------|
+| 🍎 **macOS** | Apple Silicon (M1/M2) | [mp3-converter-macos-arm64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-arm64) |
+| 🍎 **macOS** | Intel (x64) | [mp3-converter-macos-x64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-x64) |
+| 🐧 **Linux** | x64 | [mp3-converter-linux-x64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-linux-x64) |
+| 🪟 **Windows** | x64 | [mp3-converter-windows-x64.exe](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-windows-x64.exe) |
+
+#### Quick Install (macOS/Linux)
+```bash
+# Download and install (replace URL with your platform)
+curl -L https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-arm64 -o mp3-converter
+chmod +x mp3-converter
+sudo mv mp3-converter /usr/local/bin/
+
+# Verify installation
+mp3-converter --help
+```
+
 ### Prerequisites
 
 Before using this tool, install the following dependencies:
@@ -52,7 +76,7 @@ pip install yt-dlp
 brew install yt-dlp
 ```
 
-### Build from Source
+### 🔨 Build from Source
 
 ```bash
 # Clone the repository
@@ -64,6 +88,35 @@ cargo build --release
 
 # The executable will be available at target/release/mp3-converter
 ```
+
+### 🎯 Release Information
+
+#### Current Version: v0.1.0
+**Release Date:** January 2024
+
+**What's New:**
+- ✨ Initial release with core functionality
+- 🎬 Local MP4 to MP3 conversion support
+- 📺 YouTube video downloading and conversion
+- 🚀 High-performance Rust implementation
+- 🛡️ Comprehensive error handling
+- 📖 Full CLI documentation
+
+**Binary Details:**
+- **Size:** ~1.4MB (optimized release build)
+- **Dependencies:** FFmpeg, yt-dlp (external)
+- **Platforms:** macOS (ARM64/x64), Linux (x64), Windows (x64)
+- **Rust Version:** 1.75+
+
+#### Previous Releases
+- This is the initial release
+
+#### Upcoming Features (v0.2.0)
+- 🎵 Support for additional audio formats (FLAC, AAC)
+- 📁 Batch processing capabilities
+- 🎛️ Custom audio quality settings
+- 🔄 Progress bars for long operations
+- 🌐 Playlist download support
 
 ## 📖 Usage
 
