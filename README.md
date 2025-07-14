@@ -35,15 +35,15 @@ Download the latest pre-built binary for your platform:
 
 | Platform | Architecture | Download Link |
 |----------|-------------|---------------|
-| 🍎 **macOS** | Apple Silicon (M1/M2) | [mp3-converter-macos-arm64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-arm64) |
-| 🍎 **macOS** | Intel (x64) | [mp3-converter-macos-x64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-x64) |
-| 🐧 **Linux** | x64 | [mp3-converter-linux-x64](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-linux-x64) |
-| 🪟 **Windows** | x64 | [mp3-converter-windows-x64.exe](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-windows-x64.exe) |
+| 🍎 **macOS** | Apple Silicon (M1/M2) | [mp3-converter](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter) |
+| 🍎 **macOS** | Intel (x64) | [mp3-converter](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter) |
+| 🐧 **Linux** | x64 | [mp3-converter](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter) |
+| 🪟 **Windows** | x64 | [mp3-converter.exe](https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter.exe) |
 
 #### Quick Install (macOS/Linux)
 ```bash
 # Download and install (replace URL with your platform)
-curl -L https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter-macos-arm64 -o mp3-converter
+curl -L https://github.com/sw3do/mp3-converter/releases/latest/download/mp3-converter -o mp3-converter
 chmod +x mp3-converter
 sudo mv mp3-converter /usr/local/bin/
 

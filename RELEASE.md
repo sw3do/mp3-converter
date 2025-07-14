@@ -68,9 +68,7 @@ cargo build --release --target x86_64-pc-windows-gnu
 
 ### Binary Locations
 After building, binaries will be located at:
-- `target/aarch64-apple-darwin/release/mp3-converter` (macOS ARM64)
-- `target/x86_64-apple-darwin/release/mp3-converter` (macOS Intel)
-- `target/x86_64-unknown-linux-gnu/release/mp3-converter` (Linux)
+- `target/release/mp3-converter` (macOS)
 - `target/x86_64-pc-windows-gnu/release/mp3-converter.exe` (Windows)
 
 ## 📦 Creating GitHub Releases
@@ -81,10 +79,8 @@ After building, binaries will be located at:
 mkdir -p release-assets
 
 # Copy and rename binaries
-cp target/aarch64-apple-darwin/release/mp3-converter release-assets/mp3-converter-macos-arm64
-cp target/x86_64-apple-darwin/release/mp3-converter release-assets/mp3-converter-macos-x64
-cp target/x86_64-unknown-linux-gnu/release/mp3-converter release-assets/mp3-converter-linux-x64
-cp target/x86_64-pc-windows-gnu/release/mp3-converter.exe release-assets/mp3-converter-windows-x64.exe
+cp target/release/mp3-converter release-assets/mp3-converter
+cp target/x86_64-pc-windows-gnu/release/mp3-converter.exe release-assets/mp3-converter.exe
 
 # Create checksums
 cd release-assets
@@ -128,10 +124,8 @@ Choose the appropriate binary for your platform:
 
 | Platform | Architecture | Download |
 |----------|-------------|----------|
-| 🍎 macOS | Apple Silicon (M1/M2) | [mp3-converter-macos-arm64](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter-macos-arm64) |
-| 🍎 macOS | Intel (x64) | [mp3-converter-macos-x64](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter-macos-x64) |
-| 🐧 Linux | x64 | [mp3-converter-linux-x64](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter-linux-x64) |
-| 🪟 Windows | x64 | [mp3-converter-windows-x64.exe](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter-windows-x64.exe) |
+| 🍎 macOS | Apple Silicon (M1/M2) | [mp3-converter](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter) |
+| 🪟 Windows | x64 | [mp3-converter.exe](https://github.com/sw3do/mp3-converter/releases/download/v0.1.0/mp3-converter.exe) |
 
 ### 🔧 Prerequisites
 Before using, install:
